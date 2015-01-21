@@ -32,7 +32,6 @@ public class Partie {
 		}
 
 		/*
-		 * Partie coupSuivant() { ...
 		 * 
 		 * int JeuDuPenduStrategy.coupSuivant( String lettre, String
 		 * motAdeviner, StringBuffer motEncours, ) ... this.erreurs ++ }
