@@ -8,11 +8,11 @@ public class JeuDuPendu {
 		RegleDuJeu rdj = new RegleDuJeu( 5 );
 		Affichage aff = new Affichage();
 		String mot = "Pouet" ;
-		//LettreTrouveeStrategy lts = new AnthonyStrategy();
+		LettreTrouveeStrategy lts = null; //new AnthonyStrategy();
 
-		Partie partie = new Partie();
-		
-		partie.nouvellePartie(rdj, j, mot);
+		Partie partie = new Partie(lts, j);
+
+		partie.nouvellePartie(rdj, mot);
 
 		do {
 		    aff.dessine(partie);
